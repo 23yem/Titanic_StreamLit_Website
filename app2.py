@@ -50,7 +50,7 @@ for title, url in urls.items():
         # This will open the URL in a new tab
         js = f"window.open('{url}')"  # JavaScript to open a new tab
         st.components.v1.html(f'<img src onerror="{js}">', height=0, width=0)
-
+ 
 # Main content area
 st.title("Neural Network Models")  # The main title of the page
 
