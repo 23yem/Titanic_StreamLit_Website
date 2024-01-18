@@ -43,7 +43,7 @@ urls = {
     #"Random Forest": "https://www.randomforest.com"  # Replace with the actual URL
 }
 
-# Sidebar navigation
+# Sidebar navigation 
 st.sidebar.title("Navigation")
 for title, url in urls.items():
     if st.sidebar.button(title):
