@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-size: 0.7rem; /* Base font size */
+        }
+        .container {
+            max-width: 700px; /* Max-width for the container */
+            margin: auto; /* Center the container */
+        }
+        figure img {
+            width: 100%; /* Full width of its container */
+            max-width: 450px; /* Max width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Block display to respect max-width */
+            margin: 0 auto; /* Center the image */
+        }
+        h2 {
+            font-size: 1.2rem; /* Heading size */
+        }
+        h3 {
+            font-size: 1rem; /* Subheading size */
+        }
+        p {
+            font-size: 0.7rem; /* Paragraph text size */
+        }
+        /* Ensure the main content is visible */
+        main {
+            padding: 1rem 0; /* Add padding around main content */
+        }
+        nav ul {
+            padding: 0.5rem 0; /* Padding for nav */
+            list-style-type: none; /* Remove list bullets */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Add this line */
+            flex-wrap: nowrap; /* Add this line to prevent wrapping */
+        }
+        nav ul li {
+            display: inline; /* Display nav items in a line */
+            margin-right: 10px; /* Right margin for spacing */
+        }
+        nav ul li a {
+            color: #007bff; /* Set link color */
+            text-decoration: none; /* Remove text underline */
+            font-size: 0.6rem; /* Smaller font size for nav links */
+            padding: 5px 10px; /* Add padding to give a button-like appearance */
+            border-radius: 50px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Transition for smooth color change */
+            background-color: #007bff; /* Set background color */
+            color: #fff; /* Set text color */
+        }
+
+        /* Change color on hover */
+        nav ul li a:hover {
+            background-color: #0056b3; /* Change background color on hover */
+            color: #fff; /* Keep text color the same on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+    <title>Titanic Survival Project</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong style="border: 2px solid #007bff; padding: 5px; border-radius: 10px;">Neural Network Models</strong></li>        </ul>
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="https://github.com/23yem/Final-Titanic-Machine-Learning" target="_blank">GitHub Repository</a></li>
+            <li><a href="Neural_Network.html" target="_blank">Neural Networks</a></li>
+            <li><a href="Gradient_Boosted.html" target="_blank">Gradient Boosted Trees</a></li>
+            <li><a href="Random_Forest.html" target="_blank">Random Forest</a></li>
+          
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Neural Network Model</h2>
+                    <h3>My primary model</h3>
+                </hgroup>
+                    <p>This page is used to describe my <a href="https://github.com/23yem/Final-Titanic-Machine-Learning/blob/main/titanic-neural-network%20(1).ipynb" target="_blank">titanic-neural-network (1).ipynb</a> notebook. Look below for a summary of my notebook and please feel free to look over my notebook</p>                <figure>
+                    <img src="https://www.druva.com/content/dam/druvaincprogram/blog/thumbnails/blog-understanding-neural-networks-through-visualization-post.jpg" alt="Titanic" style="width: 300px; height: 300px" />
+                </figure>
+            </section>
+        </div>
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Comprehensive Analysis of the Titanic Neural Network Project</title>
+        </head>
+        <body>
+            <h1>Comprehensive Analysis of the Titanic Neural Network Project</h1>
+
+            <h2>1. Introduction and Setup: Establishing the Foundation</h2>
+            <p>The project commences in a sophisticated Python environment, essential for advanced data analytics. Key libraries such as NumPy and Pandas are integral to this setup, providing the necessary tools for data manipulation and analysis. This initial stage sets a solid foundation, equipping us with the resources needed to unravel the complexities of the Titanic dataset.</p>
+            
+            <h2>2. Library Insights: Equipping with the Right Tools</h2>
+            <p>This section is dedicated to ensuring that all necessary libraries, including TensorFlow, Keras Tuner, and Pandas, are at the right versions for optimal performance. These tools are crucial for building, training, and evaluating the neural network model, acting as the backbone of our data science toolkit. Their precise configuration is key to the success of the project.</p>
+            
+            <h2>3. Consistency with a Global Seed: Ensuring Reproducibility</h2>
+            <p>To guarantee the reproducibility of results, a global random seed is set. This step is vital in maintaining consistency across model runs, a fundamental aspect of scientific rigor in machine learning. It ensures that our neural network, regardless of its complexity, produces reliable and repeatable outcomes.</p>
+            
+            <h2>4. Data Loading: Beginning the Analytical Journey</h2>
+            <p>The data loading phase marks the beginning of our analytical journey, where the Titanic dataset is meticulously compiled. This step is crucial for understanding the data's structure, content, and inherent patterns. It is the first step in transforming raw data into actionable insights, setting the stage for a detailed exploration.</p>
+            
+            <h2>5. Data Cleaning: Refining the Dataset</h2>
+            <p>Data cleaning is a critical process where the dataset is thoroughly refined for accuracy and reliability. This phase involves correcting inconsistencies, handling missing values, and ensuring data quality. It's a vital step in preparing the dataset for precise model training and prediction.</p>
+            
+            <h2>6. Data Exploration: Uncovering Patterns</h2>
+            <p>The data exploration stage involves a deep dive into the dataset, identifying key variables, and understanding their relationships. This in-depth analysis is essential for gaining insights into the underlying structure of the data. It helps in formulating hypotheses and guiding the subsequent feature selection process.</p>
+            
+            <h2>7. Feature Selection: Strategizing for Model Efficiency</h2>
+            <p>Feature selection is a strategic process where critical features such as 'Pclass', 'Sex', and 'Fare' are chosen for the model. This step is about selecting the most impactful attributes that contribute significantly to the model's predictive power. It's a crucial phase in optimizing the model's performance and focusing on relevant data aspects.</p>
+            
+            <h2>8. Model Creation, Training, and Fine-Tuning: Building the Predictive Framework</h2>
+            <p>The model creation phase involves designing and developing the neural network structure, followed by careful training and fine-tuning. This process is guided by TensorFlow's capabilities, ensuring that the model is well-architected and optimized. Each hyperparameter is meticulously adjusted to refine the model's predictive accuracy.</p>
+            
+            <h2>9. Data Preprocessing and Sklearn Mastery: Precision in Preparation</h2>
+            <p>Data preprocessing is an exacting step where the data is transformed and standardized to feed into the neural network effectively. Utilizing Sklearn's functionalities, this phase ensures that the data is appropriately formatted, normalized, and ready for modeling. It's a critical step in preparing the dataset to achieve the highest level of model accuracy and reliability.</p>
+            
+            <h2>10. Model Submission and Evaluation: Culmination of Efforts</h2>
+            <p>The final step involves submitting Model 12, which achieved a high score of 80.622, reflecting the effectiveness of our data preparation, feature engineering, and model tuning efforts. This phase is the culmination of all preceding steps, showcasing the success of our comprehensive approach in building a robust neural network model.</p>
+            
+        </body>
+        </html>
+        
+    </main>
+    <footer class="container">
+        <small><a href="index.html">Home</a> </small>
+    </footer>
+</body>
+</html>
