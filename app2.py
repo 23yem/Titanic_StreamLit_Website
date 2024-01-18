@@ -42,7 +42,7 @@ urls = {
     #"Gradient Boosted Trees": "https://www.gradientboostedtrees.com",  # Replace with the actual URL
     #"Random Forest": "https://www.randomforest.com"  # Replace with the actual URL
 }
-
+ 
 # Sidebar navigation 
 st.sidebar.title("Navigation")
 for title, url in urls.items():
