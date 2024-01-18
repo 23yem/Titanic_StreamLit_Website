@@ -34,3 +34,4 @@ def predict(pclass, sex, fare, age, sibsp, parch):
 if st.button('Predict'):
     prediction = predict(pclass, sex, fare, age, sibsp, parch)
     st.write(f'Prediction: {"Survived" if prediction[0] == 1 else "Not Survived"}')
+    
