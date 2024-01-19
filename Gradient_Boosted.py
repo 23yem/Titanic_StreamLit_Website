@@ -41,7 +41,7 @@ st.markdown("""
 
 st.markdown("""
     <div style="text-align: center">
-        <h1>Using my Deployed and Saved Neural Network (model 12, my best model)</h1>
+        <h1>Using my best Deployed and Saved Gradient Boosted Model</h1>
         <h3>Please select the values that you want, and then press the "predict" button to see if they would survive the titanic</h3>
     </div>
     """, unsafe_allow_html=True)
