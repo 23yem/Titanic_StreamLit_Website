@@ -5,6 +5,7 @@ import tensorflow as tf
 import numpy as np
 import os
 import joblib
+import tensorflow_decision_forests as tfdf
 
 
 # Set Global random seed to make sure we can replicate any model that we create (no randomness)
@@ -56,9 +57,11 @@ def data_preprocessing(Pclass, Sex, Fare, Age, Sibsp, Parch):
     # Get it ready to be fed into TensorFlow 
     user_input_normalized = user_input_normalized.astype('float32')
 
-    #print(user_input_normalized)
+    user_input = tfdf.keras.pd_dataframe_to_tf_dataset(user_input_normalized , task = tfdf.keras.Task.CLASSIFICATION)
 
-    return user_input_normalized
+    print(user_input)
+
+    return user_input
 # Index(['Pclass', 'Fare', 'Age', 'SibSp', 'Parch', 'Sex_female', 'Sex_male',
 #        'FemaleFirstClass', 'FamilySize', 'IsAlone'],
 #       dtype='object')
@@ -66,4 +69,4 @@ def data_preprocessing(Pclass, Sex, Fare, Age, Sibsp, Parch):
 
 
 
-#data_preprocessing(1, "male", 20, 40, 1, 2)
+data_preprocessing(1, "male", 20, 40, 1, 2)
