@@ -56,7 +56,7 @@ def data_preprocessing(Pclass, Sex, Fare, Age, Sibsp, Parch):
     # Get it ready to be fed into TensorFlow 
     user_input_normalized = user_input_normalized.astype('float32')
 
-    print(user_input_normalized)
+    #print(user_input_normalized)
 
     return user_input_normalized
 # Index(['Pclass', 'Fare', 'Age', 'SibSp', 'Parch', 'Sex_female', 'Sex_male',
@@ -66,4 +66,4 @@ def data_preprocessing(Pclass, Sex, Fare, Age, Sibsp, Parch):
 
 
 
-data_preprocessing(1, "male", 20, 40, 1, 2)
+#data_preprocessing(1, "male", 20, 40, 1, 2)
