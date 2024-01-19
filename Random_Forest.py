@@ -59,7 +59,7 @@ with col2:
 
     
 
-    st.markdown('<h3 style="color:lightblue;">Ticket class: 1 = 1st, 2 = 2nd, 3 = 3rd</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color:lightblue;">Ticket class: 1 = 1st class, 2 = 2nd class, 3 = 3rd class</h3>', unsafe_allow_html=True)
     pclass = st.selectbox('',[1, 2, 3])
     st.markdown('<hr>', unsafe_allow_html=True)
 
