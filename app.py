@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 
 
 # Load HTML file
-with open('C:\\Kaggle Machine Learning\\Titanic_StreamLit_Website\\index.html', 'r') as file:    
+with open('index.html', 'r') as file:    
     html_content = file.read()
 
 components.html(html_content, width = None, height=1200)
