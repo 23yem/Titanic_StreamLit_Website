@@ -3,7 +3,6 @@ import streamlit as st
 from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
 
-from Titanic_StreamLit_Website.data_preprocessing_neural_network import data_preprocessing
 
 st.set_page_config(layout="wide")
 
