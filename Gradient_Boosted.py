@@ -4,7 +4,7 @@ from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
 
 
-from data_preprocessing import data_preprocessing
+from data_preprocessing_Gradient_Boosted import data_preprocessing
 
 st.set_page_config(layout="wide")
 
@@ -101,10 +101,12 @@ with col2:
 
         preprocessed_data = data_preprocessing(pclass, sex, fare, age, sibsp, parch)
 
-        model12 = load_model("model_12_saved.h5")
+        model = load_model("model3_GB")
 
         # Make prediction
-        prediction = model12.predict(preprocessed_data)
+        prediction = model.predict(preprocessed_data)
+
+        prediction = prediction.reshape(-1) # This is something I have to do for TFDF results to flatten it out
         
         return prediction
 
@@ -121,9 +123,9 @@ with col2:
 
     if st.button('Predict'):
         prediction_float = predict(pclass, sex, fare, age, sibsp, parch)
-        prediction_float = round(prediction_float[0][0] * 100, 2)    # turn to a percentage and round to the nearest hundreth
+        prediction_float = round(prediction_float[0] * 100, 2)    # turn to a percentage and round to the nearest hundreth
 
-        if prediction_float > 50:
+        if prediction_float > 55:
             st.markdown(f'#### Prediction: <span style="color: green; font-weight: bold;">Your person would have survived the titanic</span>, with a survival rate of {prediction_float}%', unsafe_allow_html=True)
         else:
             st.markdown(f'#### Prediction: <span style="color: red; font-weight: bold;">Your person would not have survived the titanic</span>, with only a survival rate of {prediction_float}%', unsafe_allow_html=True)
@@ -135,7 +137,7 @@ with col2:
 with open('Gradient_Boosted_2.html', 'r') as file:    
     html_content_2 = file.read()
 
-components.html(html_content_2, width = None, height=3700)
+components.html(html_content_2, width = None, height=3300)
 
 
 

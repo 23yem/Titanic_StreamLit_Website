@@ -4,7 +4,7 @@ from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
 
 
-from data_preprocessing import data_preprocessing
+from data_preprocessing_neural_network import data_preprocessing
 
 st.set_page_config(layout="wide")
 
