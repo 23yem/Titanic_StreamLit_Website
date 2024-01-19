@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-size: 0.7rem; /* Base font size */
+            background-color: rgb(14, 17, 23);
+            zoom: 1.5; /* Scale up by 50% */
+        }
+        .container {
+            max-width: 1000px; /* Max-width for the container */
+            margin: auto; /* Center the container */
+        }
+        figure img {
+            width: 100%; /* Full width of its container */
+            max-width: 450px; /* Max width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Block display to respect max-width */
+            margin: 0 auto; /* Center the image */
+        }
+        h2 {
+            font-size: 1.2rem; /* Heading size */
+        }
+        h3 {
+            font-size: 1rem; /* Subheading size */
+        }
+        p {
+            font-size: 0.7rem; /* Paragraph text size */
+        }
+        /* Ensure the main content is visible */
+        main {
+            padding: 1rem 0; /* Add padding around main content */
+        }
+        nav ul {
+            padding: 0.5rem 0; /* Padding for nav */
+            list-style-type: none; /* Remove list bullets */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Add this line */
+            flex-wrap: nowrap; /* Add this line to prevent wrapping */
+        }
+        nav ul li {
+            display: inline; /* Display nav items in a line */
+            margin-right: 10px; /* Right margin for spacing */
+        }
+        nav ul li a {
+            color: #007bff; /* Set link color */
+            text-decoration: none; /* Remove text underline */
+            font-size: 0.6rem; /* Smaller font size for nav links */
+            padding: 5px 10px; /* Add padding to give a button-like appearance */
+            border-radius: 50px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Transition for smooth color change */
+            background-color: #007bff; /* Set background color */
+            color: #fff; /* Set text color */
+        }
+
+        /* Change color on hover */
+        nav ul li a:hover {
+            background-color: #0056b3; /* Change background color on hover */
+            color: #fff; /* Keep text color the same on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+    <title>Titanic Survival Project</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong style="border: 2px solid #007bff; padding: 5px; border-radius: 10px;">Gradient Boosted Model</strong></li>        </ul>
+        <ul> 
+            <li><a href="https://titanicappwebsite-ckntb8ngumoarmlntebg9h.streamlit.app/" target="_blank">Home</a></li>
+            <li><a href="https://github.com/23yem/Final-Titanic-Machine-Learning" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://titanicappwebsite-cqsnenyqgefkrykro72yd4.streamlit.app/" target="_blank">Neural Networks</a></li>
+            <li><a href="https://titanicappwebsite-empinmmahaizzwfsfrv2s2.streamlit.app/" target="_blank">Gradient Boosted Trees</a></li>
+            <li><a href="https://titanicappwebsite-eslwwxjxgevpftfxnegadd-random-forest.streamlit.app/" target="_blank">Random Forest</a></li>
+           
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Gradient Boosted Trees Model</h2>
+                    <h3>A Cool New Model that I hadn't heard of</h3>
+                </hgroup>
+                    <p>This page is used to describe my <a href="https://github.com/23yem/Final-Titanic-Machine-Learning/blob/main/CLEAN_titanic-GradientBoostedTreesModel.ipynb" target="_blank">CLEAN_titanic-GradientBoostedTreesModel.ipynb</a> notebook. Look below for a summary of my notebook and please feel free to look over my notebook</p>                <figure>
+                    <img src="https://analyticsindiamag.com/wp-content/uploads/2020/11/xgboost.png" alt="Titanic" style="width: 450px; height: 300px" />
+                </figure>
+            </section>
+        </div>
+
+        <h1>Comprehensive Analysis of the Gradient Boosted Trees Model</h1>
+
+<h2>1. Environment Setup: Establishing the Analytical Framework</h2>
+<p>The analysis begins in a robust Python environment, integrating essential libraries like NumPy for linear algebra and Pandas for data processing. This foundational step is essential for efficient data manipulation and sets the stage for all subsequent analytical activities. It ensures access to advanced computational tools necessary for handling and analyzing complex datasets.</p>
+
+<h2>2. Data Loading: Initiating the Analytical Process</h2>
+<p>The process starts with loading the Titanic dataset, a crucial step in forming an initial understanding of the data's structure and content. This phase is fundamental for identifying key variables and preparing for in-depth data exploration. It lays the groundwork for the analysis, allowing for a comprehensive approach to the dataset.</p>
+
+<h2>3. Data Preprocessing: Preparing for Accurate Analysis</h2>
+<p>Data preprocessing involves thorough cleaning and transformation of the dataset to ensure accuracy and reliability. This stage includes handling missing values, normalizing data, and encoding categorical features, which are vital for creating a consistent analytical base. It’s a critical process for enhancing data quality, ensuring the data is in an optimal state for modeling.</p>
+
+<h2>4. Feature Engineering: Enhancing Model Effectiveness</h2>
+<p>Feature engineering is a strategic phase where important data attributes are identified and extracted. This process involves assessing the predictive power of various features and their potential impact on the model’s performance. It’s a key step for revealing underlying patterns within the data, crucial for enhancing the model's effectiveness and accuracy.</p>
+
+<h2>5. Model Building: Crafting the Predictive Tool</h2>
+<p>The model building phase involves the careful construction of the Gradient Boosted Trees model. This stage is where theoretical knowledge is applied to create a practical tool for prediction. The model is configured to suit the specific nuances of the dataset, ensuring it is well-tuned to the task of uncovering insights from the Titanic data.</p>
+
+<h2>6. Hyperparameter Tuning: Optimizing Model Performance</h2>
+<p>Hyperparameter tuning is an essential process for optimizing the model's performance. This involves experimenting with various parameter settings to find the most effective combination for the model. It's a meticulous process that balances model complexity with predictive accuracy, enhancing the overall efficacy of the analysis.</p>
+
+<h2>7. Model Training: Teaching the Model to Predict</h2>
+<p>During model training, the prepared dataset is used to teach the model how to make accurate predictions. This phase involves feeding the model with data, allowing it to learn and adapt its parameters. It’s a critical stage where the model develops its ability to discern patterns and relationships within the data.</p>
+
+<h2>8. Model Evaluation: Assessing Predictive Power</h2>
+<p>Model evaluation is carried out to assess the predictive power and accuracy of the model. This involves using various metrics to gauge the model's performance on unseen data. It's a crucial step for validating the effectiveness of the model and ensuring it delivers reliable and accurate predictions.</p>
+
+<h2>9. Model Optimization: Refining for Excellence</h2>
+<p>The model optimization phase focuses on refining the model for peak performance. This involves additional adjustments and fine-tuning, based on the insights gained from the evaluation stage. The goal is to enhance the model’s predictive ability, ensuring it delivers the most accurate and insightful results possible.</p>
+
+<h2>10. Conclusions and Insights: Synthesizing Findings</h2>
+<p>The final phase involves drawing conclusions and synthesizing insights from the model's analysis. This stage interprets the model’s performance, understanding its strengths and limitations. The insights derived offer a deeper comprehension of the Titanic dataset, contributing valuable knowledge to the field of data science and predictive modeling.</p>
+
+
+    </main>
+    <footer class="container">
+        <small><a href="index.html">Home</a> </small>
+    </footer>
+</body>
+</html>
