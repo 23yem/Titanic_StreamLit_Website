@@ -62,13 +62,12 @@ def predict(pclass, sex, fare, age, sibsp, parch):
 
 if st.button('Predict'):
     prediction_float = predict(pclass, sex, fare, age, sibsp, parch)
-    prediction_float = prediction_float[0][0]
+    prediction_float = round(prediction_float[0][0] * 100, 2)    # turn to a percentage and round to the nearest hundreth
     
     if prediction_float >= 0.5:
-        st.markdown(f'Prediction: <span style="color: green;">**Your person would have survived**</span>, with a survival rate of {prediction_float}', unsafe_allow_html=True)
-
+        st.markdown(f'Prediction: <span style="color: green; font-weight: bold;">Your person would have survived</span>, with a survival rate of {prediction_float}%', unsafe_allow_html=True)
     else:
-        st.markdown(f'Prediction: <span style="color: red;">**Your person would have not survived**</span>, with only a survival rate of {prediction_float}', unsafe_allow_html=True)
+        st.markdown(f'Prediction: <span style="color: red; font-weight: bold;">Your person would have not survived</span>, with only a survival rate of {prediction_float}%', unsafe_allow_html=True)
 
 
 
