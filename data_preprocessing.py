@@ -45,7 +45,7 @@ def data_preprocessing(Pclass, Sex, Fare, Age, Sibsp, Parch):
     # NORMALIZE THE DATA
 
     # Load the scaler from the original neural network notebook
-    scaler = joblib.load('C:\Kaggle Machine Learning\Titanic_StreamLit_Website\scaler2.pkl')
+    scaler = joblib.load('scaler2.pkl')
 
     columns_to_normalize = ["Pclass", "Fare","Age", "SibSp"]
 
