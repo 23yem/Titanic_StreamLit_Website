@@ -2,9 +2,11 @@ import tensorflow as tf
 import streamlit as st
 from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
-st.set_page_config(layout="wide")
+
+
 from data_preprocessing import data_preprocessing
 
+st.set_page_config(layout="wide")
 
 # Load part 1
 with open('Neural_Network_1.html', 'r') as file:    
