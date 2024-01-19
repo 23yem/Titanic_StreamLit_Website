@@ -1,6 +1,5 @@
 import tensorflow as tf
 import streamlit as st
-import streamlit as st
 from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
 st.set_page_config(layout="wide")
@@ -10,13 +9,16 @@ st.set_page_config(layout="wide")
 with open('C:\\Kaggle Machine Learning\\Titanic_StreamLit_Website\\index.html', 'r') as file:    
     html_content = file.read()
 
-# print(html_content)
-# Display HTML
-#st.markdown(html_content, unsafe_allow_html=True)
+components.html(html_content, width = None, height=1200)
 
+st.image("high_score_of_80.622.jpg")
 
-components.html(html_content, width = None, height=10000)
-
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 
 model12 = load_model("model_12_saved.h5")
 
