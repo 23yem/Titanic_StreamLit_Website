@@ -4,12 +4,12 @@ from streamlit.components import v1 as components
 from tensorflow.keras.models import load_model
 
 
-from Titanic_StreamLit_Website.data_preprocessing_neural_network import data_preprocessing
+from data_preprocessing_Random_Forest import data_preprocessing
 
 st.set_page_config(layout="wide")
 
 # Load part 1
-with open('Neural_Network_1.html', 'r') as file:    
+with open('Random_Forest_1.html', 'r') as file:    
     html_content_1 = file.read()
 
 components.html(html_content_1, width = None, height=1000)
@@ -41,7 +41,7 @@ st.markdown("""
 
 st.markdown("""
     <div style="text-align: center">
-        <h1>Using my best Deployed and Saved Random Forest Model</h1>
+        <h1>Using my best Deployed and Saved Gradient Boosted Model</h1>
         <h3>Please select the values that you want, and then press the "predict" button to see if they would survive the titanic</h3>
     </div>
     """, unsafe_allow_html=True)
@@ -101,10 +101,12 @@ with col2:
 
         preprocessed_data = data_preprocessing(pclass, sex, fare, age, sibsp, parch)
 
-        model12 = load_model("model_12_saved.h5")
+        model = load_model("model3_RF")
 
         # Make prediction
-        prediction = model12.predict(preprocessed_data)
+        prediction = model.predict(preprocessed_data)
+
+        prediction = prediction.reshape(-1) # This is something I have to do for TFDF results to flatten it out
         
         return prediction
 
@@ -121,7 +123,7 @@ with col2:
 
     if st.button('Predict'):
         prediction_float = predict(pclass, sex, fare, age, sibsp, parch)
-        prediction_float = round(prediction_float[0][0] * 100, 2)    # turn to a percentage and round to the nearest hundreth
+        prediction_float = round(prediction_float[0] * 100, 2)    # turn to a percentage and round to the nearest hundreth
 
         if prediction_float > 50:
             st.markdown(f'#### Prediction: <span style="color: green; font-weight: bold;">Your person would have survived the titanic</span>, with a survival rate of {prediction_float}%', unsafe_allow_html=True)
@@ -132,10 +134,10 @@ with col2:
 
 
 # Load part 2
-with open('Neural_Network_2.html', 'r') as file:    
+with open('Random_Forest_2.html', 'r') as file:    
     html_content_2 = file.read()
 
-components.html(html_content_2, width = None, height=3700)
+components.html(html_content_2, width = None, height=3300)
 
 
 
