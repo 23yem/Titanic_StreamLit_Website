@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-size: 0.7rem; /* Base font size */
+            background-color: rgb(14, 17, 23);
+            zoom: 1.5; /* Scale up by 50% */
+        }
+        .container {
+            max-width: 700px; /* Max-width for the container */
+            margin: auto; /* Center the container */
+        }
+        figure img {
+            width: 100%; /* Full width of its container */
+            max-width: 450px; /* Max width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Block display to respect max-width */
+            margin: 0 auto; /* Center the image */
+        }
+        h2 {
+            font-size: 1.2rem; /* Heading size */
+        }
+        h3 {
+            font-size: 1rem; /* Subheading size */
+        }
+        p {
+            font-size: 0.7rem; /* Paragraph text size */
+        }
+        /* Ensure the main content is visible */
+        main {
+            padding: 1rem 0; /* Add padding around main content */
+        }
+        nav ul {
+            padding: 0.5rem 0; /* Padding for nav */
+            list-style-type: none; /* Remove list bullets */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Add this line */
+            flex-wrap: nowrap; /* Add this line to prevent wrapping */
+        }
+        nav ul li {
+            display: inline; /* Display nav items in a line */
+            margin-right: 10px; /* Right margin for spacing */
+        }
+        nav ul li a {
+            color: #007bff; /* Set link color */
+            text-decoration: none; /* Remove text underline */
+            font-size: 0.6rem; /* Smaller font size for nav links */
+            padding: 5px 10px; /* Add padding to give a button-like appearance */
+            border-radius: 50px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Transition for smooth color change */
+            background-color: #007bff; /* Set background color */
+            color: #fff; /* Set text color */
+        }
+
+        /* Change color on hover */
+        nav ul li a:hover {
+            background-color: #0056b3; /* Change background color on hover */
+            color: #fff; /* Keep text color the same on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+    <title>Titanic Survival Project</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong style="border: 2px solid #007bff; padding: 5px; border-radius: 10px;">Neural Network Models</strong></li>        </ul>
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="https://github.com/23yem/Final-Titanic-Machine-Learning" target="_blank">GitHub Repository</a></li>
+            <li><a href="Neural_Network.html" target="_blank">Neural Networks</a></li>
+            <li><a href="Gradient_Boosted.html" target="_blank">Gradient Boosted Trees</a></li>
+            <li><a href="Random_Forest.html" target="_blank">Random Forest</a></li>
+          
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Neural Network Model</h2>
+                    <h3>My primary model</h3>
+                </hgroup>
+                    <p>This page is used to describe my <a href="https://github.com/23yem/Final-Titanic-Machine-Learning/blob/main/titanic-neural-network%20(1).ipynb" target="_blank">titanic-neural-network (1).ipynb</a> notebook. Look below for a summary of my notebook and please feel free to look over my notebook</p>                <figure>
+                    <img src="https://www.druva.com/content/dam/druvaincprogram/blog/thumbnails/blog-understanding-neural-networks-through-visualization-post.jpg" alt="Titanic" style="width: 300px; height: 300px" />
+                </figure>
+            </section>
+        </div>
+
+
+        
+        
+    </main>
+    <footer class="container">
+        <small><a href="index.html">Home</a> </small>
+    </footer>
+</body>
+</html>
