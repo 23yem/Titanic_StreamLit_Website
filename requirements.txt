@@ -2,4 +2,5 @@ tensorflow
 numpy
 pandas
 joblib
+scikit-learn
 #os
