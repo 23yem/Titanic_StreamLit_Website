@@ -9,7 +9,7 @@ from data_preprocessing import data_preprocessing
 st.set_page_config(layout="wide")
 
 # Load part 1
-with open('Neural_Network_1.html', 'r') as file:    
+with open('Gradient_Boosted_1.html', 'r') as file:    
     html_content_1 = file.read()
 
 components.html(html_content_1, width = None, height=1000)
@@ -132,7 +132,7 @@ with col2:
 
 
 # Load part 2
-with open('Neural_Network_2.html', 'r') as file:    
+with open('Gradient_Boosted_2.html', 'r') as file:    
     html_content_2 = file.read()
 
 components.html(html_content_2, width = None, height=3700)
