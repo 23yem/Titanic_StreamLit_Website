@@ -63,7 +63,30 @@
             color: #fff; /* Keep text color the same on hover */
             text-decoration: underline; /* Add underline on hover */
         }
-        @media (max-width: 1500px) {
+
+
+
+
+        li strong {
+        display: inline-block; /* Allow the boundary to wrap */
+        white-space: nowrap; /* Keep the text on a single line */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Show an ellipsis when the text overflows */
+        max-width: 100%; /* Limit the width to the parent's width */
+        }
+
+        nav ul {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: nowrap; /* Prevent wrapping to the next line */
+        justify-content: space-around; /* Distribute space evenly between items */
+    }
+
+    nav ul li a {
+        font-size: calc(0.4rem + 0.2vw); /* Dynamically adjust font size based on viewport width */
+    }
+
+        /* Responsive styles for mobile!*/
+        @media (max-width: 1000px) {
         body {
             zoom: 1; /* Reset zoom for small screens */
         }
@@ -74,12 +97,20 @@
         figure img {
             max-width: 100%; /* Allow the image to use the full width of its container */
         }
-        nav ul {
-            flex-direction: column; /* Stack nav items vertically */
-            align-items: center; /* Center nav items */
-        }
+
         nav ul li {
             margin-bottom: 10px; /* Bottom margin for spacing */
+            margin-right: 0; /* Remove right margin */
+        }
+
+
+        li strong {
+            white-space: normal; /* Allow the text to wrap to the next line */
+        }
+
+
+        nav ul li a {
+            font-size: calc(0.4rem + 0.2vw); /* Reduce font size for small screens */
         }
     }
     </style>
@@ -111,8 +142,7 @@
             </section>
         </div>
 
-
-        
+        Can you make the elements in the nav bar NOT stack horizontally, but instead they sit horizontally and dynamically shrink according to the size of the page
         
     </main>
     <footer class="container">
