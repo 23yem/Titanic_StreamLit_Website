@@ -63,6 +63,25 @@
             color: #fff; /* Keep text color the same on hover */
             text-decoration: underline; /* Add underline on hover */
         }
+        @media (max-width: 1500px) {
+        body {
+            zoom: 1; /* Reset zoom for small screens */
+        }
+        .container {
+            max-width: 100%; /* Allow the container to use the full width of the screen */
+            padding: 0 1rem; /* Add some horizontal padding */
+        }
+        figure img {
+            max-width: 100%; /* Allow the image to use the full width of its container */
+        }
+        nav ul {
+            flex-direction: column; /* Stack nav items vertically */
+            align-items: center; /* Center nav items */
+        }
+        nav ul li {
+            margin-bottom: 10px; /* Bottom margin for spacing */
+        }
+    }
     </style>
     <title>Titanic Survival Project</title>
 </head>
