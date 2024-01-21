@@ -137,7 +137,7 @@ with col2:
 with open('Random_Forest_2.html', 'r') as file:    
     html_content_2 = file.read()
 
-components.html(html_content_2, width = None, height=3300)
+components.html(html_content_2, width = None, height=5700)
 
 
 
