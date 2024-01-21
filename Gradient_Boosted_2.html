@@ -11,8 +11,10 @@
             zoom: 1.5; /* Scale up by 50% */
         }
         .container {
-            max-width: 1000px; /* Max-width for the container */
+            max-width: 900px; /* Max-width for the container */
+            min-height: 5700px;
             margin: auto; /* Center the container */
+            
         }
         figure img {
             width: 100%; /* Full width of its container */
@@ -64,13 +66,21 @@
             text-decoration: underline; /* Add underline on hover */
         }
 
+
         /* Responsive styles for mobile!*/
         @media (max-width: 1000px) {
 
             h1 {
             font-size: 1.5rem;
            
-        }
+            }
+
+            .container {
+            
+            margin: auto; /* Center the container */
+            overflow-y: auto; /* Add a scrollbar if necessary */
+          
+            }
         }
     </style>
     <title>Titanic Survival Project</title>
